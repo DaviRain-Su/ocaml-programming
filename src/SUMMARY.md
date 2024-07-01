@@ -13,12 +13,12 @@
 
 # Introduction
 
-- [Better Programming Through Ocaml](./introduction/ch1_better_programming_through_ocaml.md)
-  - [The Past of OCaml](./introduction/ch1_the_past_of_ocaml.md)
-  - [The Presen of OCaml](./introduction/ch1_the_present_of_ocaml.md)
+- [通过 OCaml 更好地编程](./introduction/ch1_better_programming_through_ocaml.md)
+  - [OCaml 的过去](./introduction/ch1_the_past_of_ocaml.md)
+  - [OCaml 的现在](./introduction/ch1_the_present_of_ocaml.md)
   - [Look to Your Future](./introduction/ch1_look_to_your_future.md)
-  - [A brief history of CS 3110](./introduction/ch1_a_brief_history_of_cs3110.md)
-  - [Summary](./introduction/ch1_summary.md)
+  - [CS 3110 的简要历史](./introduction/ch1_a_brief_history_of_cs3110.md)
+  - [总结](./introduction/ch1_summary.md)
 - [The Basics of OCaml](./introduction/ch2_the_basics_of_ocaml.md)
   - [The OCaml Toplevel](./introduction/ch2_the_ocaml_toplevel.md)
   - [Compilling OCaml Programs](./introduction/ch2_compiling_ocaml_programs.md)
