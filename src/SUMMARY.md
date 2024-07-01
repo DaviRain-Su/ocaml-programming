@@ -7,7 +7,7 @@
 # Perface
 
 - [关于本书](./perface/about_this_book.md)
-- [Installing Ocaml](./perface/install_ocaml.md)
+- [安装 OCaml](./perface/install_ocaml.md)
 
 ---
 
