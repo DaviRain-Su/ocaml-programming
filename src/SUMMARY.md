@@ -26,6 +26,7 @@
   - [Functions](./introduction/ch2_functions.md)
   - [Documentation](./introduction/ch2_documentation.md)
   - [Printing](./introduction/ch2_printing.md)
+  - [Debugging](./introduction/ch2_debugging.md)
   - [Summary](./introduction/ch2_summary.md)
   - [Exercises](./introduction/ch2_exercises.md)
 
