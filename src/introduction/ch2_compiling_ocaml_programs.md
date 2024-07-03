@@ -20,7 +20,7 @@ $ cd hello-world
 let _ = print_endline "Hello, world!"
 ```
 
-> 在那行代码的末尾没有双分号 `;;` 。双分号是用于顶层交互式会话的，这样顶层就知道你已经输入完一段代码了。通常在 .ml 文件中不需要写双分号。
+> 在那行代码的末尾没有双分号 `;;` 。双分号是用于toplevel交互式会话的，这样toplevel就知道你已经输入完一段代码了。通常在 .ml 文件中不需要写双分号。
 
 上面的 `let _ =` 表示我们不在乎给右侧代码命名（因此是“空白”或下划线）。 `=` 。
 
@@ -135,7 +135,7 @@ $ dune exec bin/main.exe
 
 它将打印 `Hello, World!`
 
-> 如果您使用 ocamlformat 自动格式化源代码，请注意 Dune 不会自动向您的项目添加一个 `.ocamlformat` 文件。您可能希望在项目的顶层目录（即根目录）中添加一个文件。这个目录中包含名为 `dune-project` 的文件。
+> 如果您使用 ocamlformat 自动格式化源代码，请注意 Dune 不会自动向您的项目添加一个 `.ocamlformat` 文件。您可能希望在项目的toplevel目录（即根目录）中添加一个文件。这个目录中包含名为 `dune-project` 的文件。
 
 ## 连续运行Dune
 
