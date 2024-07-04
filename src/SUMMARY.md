@@ -122,8 +122,7 @@
 
 # Lagniappe
 
-- [The Curry-Howard](./lagniappe/ch10_the_curry_howard.md)
-- [Correspondence](./lagniappe/ch10_correspondence.md)
+- [The Curry-Howard Correspondence](./lagniappe/ch10_the_curry_howard_correspondence.md)
 
 ---
 
