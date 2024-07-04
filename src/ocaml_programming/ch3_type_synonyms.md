@@ -20,7 +20,7 @@ type vector = float list
 type matrix = float list list
 ```
 
-无论何处需要 float * float ，您都可以使用 point ，反之亦然。这两者可以完全互换。在下面的代码中， get_x 不在乎您传递的是被注释为其中一个还是另一个的值：
+无论何处需要 `float * float` ，您都可以使用 `point` ，反之亦然。这两者可以完全互换。在下面的代码中， `get_x` 不在乎您传递的是被注释为其中一个还是另一个的值：
 
 ```ocaml
 let get_x = fun (x, _) -> x

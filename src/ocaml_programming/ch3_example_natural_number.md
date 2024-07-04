@@ -2,7 +2,7 @@
 
 我们可以定义一个递归变体，它的行为类似于数字，从而证明我们实际上并不一定需要将数字内置到 OCaml 中！（不过出于效率考虑，将数字内置进去是件好事。）
 
-自然数要么是零，要么是另一个自然数的后继。这是你在数理逻辑课程中可能会定义自然数的方式，它自然地导致以下 OCaml 类型 nat ：
+自然数要么是零，要么是另一个自然数的后继。这是你在数理逻辑课程中可能会定义自然数的方式，它自然地导致以下 OCaml 类型 `nat` ：
 
 ```ocaml
 type nat = Zero | Succ of nat
@@ -12,7 +12,7 @@ type nat = Zero | Succ of nat
 type nat = Zero | Succ of nat
 ```
 
-我们已经定义了一个新类型 nat ， Zero 和 Succ 是这种类型值的构造函数。这使我们能够构建具有任意数量嵌套 Succ 构造函数的表达式。这样的值就像自然数：
+我们已经定义了一个新类型 `nat` ， `Zero` 和 `Succ` 是这种类型值的构造函数。这使我们能够构建具有任意数量嵌套 `Succ` 构造函数的表达式。这样的值就像自然数：
 
 ```ocaml
 let zero = Zero
@@ -42,7 +42,7 @@ val three : nat = Succ (Succ (Succ Zero))
 val four : nat = Succ (Succ (Succ (Succ Zero)))
 ```
 
-现在我们可以编写函数来操作这种类型的值。在下面的代码中，我们将写很多类型注释，以帮助读者跟踪哪些值是 nat 而不是 int ；当然，编译器不需要我们的帮助。
+现在我们可以编写函数来操作这种类型的值。在下面的代码中，我们将写很多类型注释，以帮助读者跟踪哪些值是 `nat` 而不是 `int` ；当然，编译器不需要我们的帮助。
 
 ```ocaml
 let iszero = function
@@ -75,7 +75,7 @@ let rec add n1 n2 =
 val add : nat -> nat -> nat = <fun>
 ```
 
-我们可以将 nat 值转换为类型 int ，反之亦然：
+我们可以将 `nat` 值转换为类型 `int` ，反之亦然：
 
 ```ocaml
 let rec int_of_nat = function

@@ -18,7 +18,7 @@ type 'a tree =
 type 'a tree = Leaf | Node of 'a * 'a tree * 'a tree
 ```
 
-一个节点携带类型为 'a 的数据项，并具有左子树和右子树。叶子为空。将此定义与列表的定义进行比较，注意它们结构是多么相似：
+一个节点携带类型为 `'a` 的数据项，并具有左子树和右子树。叶子为空。将此定义与列表的定义进行比较，注意它们结构是多么相似：
 
 ```ocaml
 type 'a tree =                        type 'a mylist =
@@ -26,7 +26,7 @@ type 'a tree =                        type 'a mylist =
   | Node of 'a * 'a tree * 'a tree      | Cons of 'a * 'a mylist
 ```
 
-唯一的基本区别在于 Cons 包含一个子列表，而 Node 包含两个子树。
+唯一的基本区别在于 `Cons` 包含一个子列表，而 `Node` 包含两个子树。
 
 这里是构建一个小树的代码：
 
@@ -57,7 +57,7 @@ val t : int tree =
    Node (5, Node (6, Leaf, Leaf), Node (7, Leaf, Leaf)))
 ```
 
-树的大小是指其中节点的数量（即 Node 个，而不是 Leaf 个）。例如，上面树 t 的大小为 7。这里是一个函数 size : 'a tree -> int ，用于返回树中节点的数量：
+树的大小是指其中节点的数量（即 `Node` 个，而不是 Leaf 个）。例如，上面树 `t` 的大小为 7。这里是一个函数 `size : 'a tree -> int` ，用于返回树中节点的数量：
 
 ```ocaml
 let rec size = function
@@ -121,7 +121,7 @@ let rec mem x = function
 val mem : 'a -> 'a tree -> bool = <fun>
 ```
 
-函数名称 mem 是“成员”的缩写；标准库通常使用这个名称的函数来实现对集合数据结构的搜索，以确定某个元素是否是该集合的成员。
+函数名称 `mem` 是“成员”的缩写；标准库通常使用这个名称的函数来实现对集合数据结构的搜索，以确定某个元素是否是该集合的成员。
 
 这是一个计算树的先序遍历的函数，其中每个节点在其任何子节点之前被访问，通过构建一个列表，其中值按照它们被访问的顺序出现：
 
@@ -129,7 +129,6 @@ val mem : 'a -> 'a tree -> bool = <fun>
 let rec preorder = function
   | Leaf -> []
   | Node {value; left; right} -> [value] @ preorder left @ preorder right
-
 ```
 
 ```ocaml
@@ -144,7 +143,7 @@ preorder t
 - : int list = [2; 1; 3]
 ```
 
-尽管上面的代码中算法非常清晰，但由于 @ 运算符，在不平衡树上它需要二次时间。这个问题可以通过引入一个额外的参数 acc 来解决，在每个节点累积值，尽管这会使代码变得不太清晰。
+尽管上面的代码中算法非常清晰，但由于 `@` 运算符，在不平衡树上它需要二次时间。这个问题可以通过引入一个额外的参数 `acc` 来解决，在每个节点累积值，尽管这会使代码变得不太清晰。
 
 ```ocaml
 let preorder_lin t =
@@ -158,4 +157,4 @@ let preorder_lin t =
 val preorder_lin : 'a tree -> 'a list = <fun>
 ```
 
-上述版本在树中每个 Node 使用了恰好一个 :: 操作，使其具有线性时间。
+上述版本在树中每个 `Node` 使用了恰好一个 `::` 操作，使其具有线性时间。
